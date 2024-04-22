@@ -1,7 +1,7 @@
 {
   "name": "pratica-4",
   "version": "1.0.0",
-  "description": "Crud com restify.js e PostgreSQL",
+  "description": "Crud com restify.js",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js"

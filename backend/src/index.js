@@ -1,4 +1,3 @@
-
 const restify = require('restify');
 const { Pool } = require('pg');
 
@@ -19,7 +18,7 @@ var server = restify.createServer({
 // Iniciando o banco de dados
 async function initDatabase() {
     try {
-        await pool.query('DROP TABLE IF EXISTS professores');
+        await pool.query('DROP TABLE IF EXISTS alunos');
         await pool.query('CREATE TABLE IF NOT EXISTS professores (id SERIAL PRIMARY KEY, nome VARCHAR(255) NOT NULL, disciplina VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL)');
         console.log('Banco de dados inicializado com sucesso');
     } catch (error) {
